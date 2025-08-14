@@ -1,7 +1,8 @@
 name: animated_loading_ui
 description: "Flutter loading animation package."
 version: 0.0.1
-homepage:
+homepage: https://github.com/santoshkafle/animated_loading_ui
+repository: https://github.com/santoshkafle/animated_loading_ui
 
 environment:
   sdk: ^3.7.2
