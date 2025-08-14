@@ -1,0 +1,21 @@
+name: example
+description: Demo app for animated_loading_ui.
+
+publish_to: 'none'
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  animated_loading_ui:
+    path: "../"
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
