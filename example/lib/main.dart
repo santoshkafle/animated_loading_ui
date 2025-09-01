@@ -1,4 +1,5 @@
 import 'package:animated_loading_ui/animated_loading_ui.dart';
+import 'package:animated_loading_ui/res/icon_type.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -25,16 +26,6 @@ class LoadingPageDemo extends StatefulWidget {
 }
 
 class _LoadingPageDemoState extends State<LoadingPageDemo> {
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   Timer(Duration(seconds: 3), () {
-  //     Navigator.push(
-  //       context,
-  //       MaterialPageRoute(builder: (context) => SecondPageTest()),
-  //     );
-  //   });
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -61,11 +52,11 @@ class _LoadingPageDemoState extends State<LoadingPageDemo> {
               ],
             ),
             Text("wheel:", style: TextStyle(color: Colors.white, fontSize: 15)),
-            AnimatedUiLoader.wheel(),
+            AnimatedUiLoader.rotate(),
             Text("Fan:", style: TextStyle(color: Colors.white, fontSize: 15)),
-            AnimatedUiLoader.fan(color: Colors.white),
+            AnimatedUiLoader.rotate(image: IconImage.fan,),
             Text("Gear:", style: TextStyle(color: Colors.white, fontSize: 15)),
-            AnimatedUiLoader.gear(color: Colors.green),
+            AnimatedUiLoader.rotate(image: IconImage.gear,),
           ],
         ),
       ),

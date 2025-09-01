@@ -1,14 +1,13 @@
-library animated_ui_loader;
+library;
 
 import 'package:animated_loading_ui/res/icon_type.dart';
 import 'package:animated_loading_ui/res/indicators/simple_rotation.dart';
 import 'package:animated_loading_ui/res/indicators/three_dots_leftright.dart';
-import 'package:animated_loading_ui/res/indicators/speed_rotation.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedUiLoader extends StatelessWidget {
   final Widget child;
-  const AnimatedUiLoader._({Key? key, required this.child}) : super(key: key);
+  const AnimatedUiLoader._({super.key, required this.child});
 
   //facotry method... defaoult..
   factory AnimatedUiLoader({
@@ -61,42 +60,41 @@ class AnimatedUiLoader extends StatelessWidget {
   }
 
   //facotry wheel rotation... defaoult..
-  factory AnimatedUiLoader.wheel({
-    double acceleration = 0.001,
-    double maxSpeed = 15,
+  factory AnimatedUiLoader.rotate({
     double radius = 32,
+    IconImage image = IconImage.wheel,
+    Color? color
   }) {
     return AnimatedUiLoader._(
-      child: SpeedRotation(
-        acceleration: acceleration,
-        maxSpeed: maxSpeed,
+      child: SimpleRotation(
         radius: radius,
-        iconImage: IconImage.wheel,
+        iconImage: image,
+        color: color,
       ),
     );
   }
 
   //facotry fan rotation... defaoult..
-  factory AnimatedUiLoader.fan({double radius = 32, Color? color}) {
-    return AnimatedUiLoader._(
-      child: SimpleRotation(
-        radius: radius,
-        iconImage: IconImage.fan,
-        color: color,
-      ),
-    );
-  }
+  // factory AnimatedUiLoader.fan({double radius = 32, Color? color}) {
+  //   return AnimatedUiLoader._(
+  //     child: SimpleRotation(
+  //       radius: radius,
+  //       iconImage: IconImage.fan,
+  //       color: color,
+  //     ),
+  //   );
+  // }
 
   //facotry gear rotation... defaoult..
-  factory AnimatedUiLoader.gear({double radius = 32, Color? color}) {
-    return AnimatedUiLoader._(
-      child: SimpleRotation(
-        radius: radius,
-        iconImage: IconImage.gear,
-        color: color,
-      ),
-    );
-  }
+  // factory AnimatedUiLoader.gear({double radius = 32, Color? color}) {
+  //   return AnimatedUiLoader._(
+  //     child: SimpleRotation(
+  //       radius: radius,
+  //       iconImage: IconImage.gear,
+  //       color: color,
+  //     ),
+  //   );
+  // }
 
   @override
   Widget build(BuildContext context) {

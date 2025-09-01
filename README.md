@@ -14,14 +14,14 @@ A simple flutter loading ui package with dots and image.
 
 ## Getting started
 
-Add this to your `pubspec.yaml`:
-dependencies:
-  animated_loading_ui: ^0.0.1
+Add this in your project dependencies: 'animated_loading_ui: ^0.0.2'
 
 ## Usage
 
-This is Simple way to use, see example to know
-import 'package:my_package/my_package.dart';
+This is Simple way to use, see example to know more.
+
+''''dart
+import 'package:animated_loading_ui/animated_loading_ui.dart';
 
 class MyWidget extends StatelessWidget {
   @override
@@ -39,7 +39,27 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
+''''
 
+Another one.
+
+'''''dart
+import 'package:animated_loading_ui/animated_loading_ui.dart';
+import 'package:animated_loading_ui/res/icon_type.dart';
+
+class MyWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: AnimatedUiLoader.rotate(image: IconImage.fan,),
+    );
+  }
+}
+''''''
+
+There is 3 type of image you can use.
+
+'image: IconImage.fan, IconImage.wheel, IconImage.gear'
 
 ## Issues & Feedback
 
