@@ -20,7 +20,7 @@ Add this in your project dependencies: 'animated_loading_ui: ^0.0.2'
 
 This is Simple way to use, see example to know more.
 
-'''dart
+```dart
 import 'package:animated_loading_ui/animated_loading_ui.dart';
 
 class MyWidget extends StatelessWidget {
@@ -39,11 +39,11 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
-'''
+```
 
 Another one.
 
-'''dart
+```dart
 import 'package:animated_loading_ui/animated_loading_ui.dart';
 import 'package:animated_loading_ui/res/icon_type.dart';
 
@@ -55,11 +55,11 @@ class MyWidget extends StatelessWidget {
     );
   }
 }
-'''
+```
 
 There is 3 type of image you can use.
 
-'image: IconImage.fan, IconImage.wheel, IconImage.gear'
+```image: IconImage.fan, IconImage.wheel, IconImage.gear```
 
 ## Issues & Feedback
 
