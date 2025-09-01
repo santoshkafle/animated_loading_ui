@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 
 class AnimatedUiLoader extends StatelessWidget {
   final Widget child;
-  const AnimatedUiLoader._({super.key, required this.child});
+  const AnimatedUiLoader._({required this.child});
 
   //facotry method... defaoult..
   factory AnimatedUiLoader({
@@ -73,28 +73,6 @@ class AnimatedUiLoader extends StatelessWidget {
       ),
     );
   }
-
-  //facotry fan rotation... defaoult..
-  // factory AnimatedUiLoader.fan({double radius = 32, Color? color}) {
-  //   return AnimatedUiLoader._(
-  //     child: SimpleRotation(
-  //       radius: radius,
-  //       iconImage: IconImage.fan,
-  //       color: color,
-  //     ),
-  //   );
-  // }
-
-  //facotry gear rotation... defaoult..
-  // factory AnimatedUiLoader.gear({double radius = 32, Color? color}) {
-  //   return AnimatedUiLoader._(
-  //     child: SimpleRotation(
-  //       radius: radius,
-  //       iconImage: IconImage.gear,
-  //       color: color,
-  //     ),
-  //   );
-  // }
 
   @override
   Widget build(BuildContext context) {

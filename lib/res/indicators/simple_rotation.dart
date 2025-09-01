@@ -51,7 +51,7 @@ class _SimpleRotationState extends State<SimpleRotation>
         width: widget.radius,
         alignment: Alignment.center,
         child: Image.asset(
-          IconType.GetIcon(widget.iconImage),
+          IconType.getIcon(widget.iconImage),
           package: 'animated_loading_ui',
           fit: BoxFit.cover,
           color: widget.color,

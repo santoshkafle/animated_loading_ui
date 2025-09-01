@@ -1,5 +1,5 @@
 class IconType {
-  static String GetIcon(IconImage iconImage) {
+  static String getIcon(IconImage iconImage) {
     switch (iconImage) {
       case IconImage.wheel:
         return "assets/wheel_icon.png";
